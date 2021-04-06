@@ -1,0 +1,55 @@
+Feature: Iniciar sesion de usuario
+
+  Scenario: El usuario realiza el login exitoso
+    Given El usuario se encuentra en la pantalla de login
+    When El usuario realiza el login con el username: <username> y password: <password>
+    Then Se muestra (...)
+
+    Examples:
+      | username           	| password 			|
+      | usuario-valido		| password-valido 	|
+
+  
+  Scenario: El usuario ingresa un username incorrecto
+    Given El usuario se encuentra en la pantalla de login
+    When El usuario realiza el login con el username: <username> y password: <password>
+    Then Se muestra (...)
+
+    Examples:
+      | username               	| password		|
+      | usuario-invalido  		| password    	|
+
+  
+  Scenario: El usuario ingresa un password incorrecto
+    Given El usuario se encuentra en la pantalla de login
+    When El usuario realiza el login con el username: <username> y password: <password>
+    Then Se muestra (...)
+
+    Examples:
+      | username               	| password    		    |
+      | usuario-valido     		| password-invalido  	|
+
+  
+  Scenario: El usuario ingresa un campo vacio
+    Given El usuario se encuentra en la pantalla de login
+    When El usuario realiza el login con el username: <username> y password: <password>
+    Then Se muestra (...)
+
+    Examples:
+      | username               | password    		|
+      |                        | password-valido	|
+      | username-valido        | 					|
+
+  
+  Scenario: El usuario ingresa ambos campos vacios
+    Given El usuario se encuentra en la pantalla de login
+    When El usuario realiza el login con el username: <username> y password: <password>
+    Then Se muestra (...)
+
+    Examples:
+      | username | password    |
+      |          |             |
+
+      
+      asd@asd.com.ar
+      crowdar
