@@ -1,17 +1,16 @@
 Feature: Iniciar sesion de usuario
 
   @Smoke
-  Scenario: El usuario realiza el login exitoso
+  Scenario Outline: El usuario realiza el login exitoso
     Given El usuario se encuentra en la pantalla de login
     When El usuario realiza el login con el username: <username> y password: <password>
     Then Se muestra la sección "MY ACCOUNT" del usuario
 
     Examples:
       | username           	| password 		|
-      | usuario-valido		| password-valido 	|
+      | asd@asd.com.ar		| crowdar	 	|
 
-  @Smoke
-  Scenario: El usuario ingresa un username incorrecto
+  Scenario Outline: El usuario ingresa un username incorrecto
     Given El usuario se encuentra en la pantalla de login
     When El usuario realiza el login con el username: <username> y password: <password>
     Then Se muestra la alerta de "Invalid email address."
@@ -21,37 +20,35 @@ Feature: Iniciar sesion de usuario
       | usuario-invalido  	| password    		|
 
   @Smoke
-  Scenario: El usuario ingresa un password incorrecto
+  Scenario Outline: El usuario ingresa un password incorrecto
     Given El usuario se encuentra en la pantalla de login
     When El usuario realiza el login con el username: <username> y password: <password>
     Then Se muestra la alerta de "Authentication failed."
 
     Examples:
       | username               	| password    		|
-      | usuario-valido     	| password-invalido  	|
+      | asd@asd.com.ar     	| password-invalido  	|
 
-  @Smoke
-  Scenario: El usuario ingresa un usuario vacio
+  Scenario Outline: El usuario ingresa un usuario vacio
     Given El usuario se encuentra en la pantalla de login
     When El usuario realiza el login con el username: <username> y password: <password>
     Then Se muestra la alerta de "An email address required."
 
     Examples:
       | username               | password    		|
-      |                        | password-valido	|
+      |                        | password		|
 
   @Smoke
-  Scenario: El usuario ingresa un password vacio
+  Scenario Outline: El usuario ingresa un password vacio
     Given El usuario se encuentra en la pantalla de login
     When El usuario realiza el login con el username: <username> y password: <password>
     Then Se muestra la alerta de "Password is required."
 
     Examples:
       | username               | password    		|
-      | username-valido        | 			|
+      | asd@asd.com.ar         | 			|
 
-  @Smoke
-  Scenario: El usuario ingresa ambos campos vacios
+  Scenario Outline: El usuario ingresa ambos campos vacios
     Given El usuario se encuentra en la pantalla de login
     When El usuario realiza el login con el username: <username> y password: <password>
     Then Se muestra la alerta de "An email address required."
