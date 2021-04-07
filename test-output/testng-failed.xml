@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="Test(failed)">
+  <test name="Test on Chrome(failed)">
+    <parameter name="BrowserType" value="Chrome"/>
     <classes>
-      <class name="com.reports.automation.LoginFailed">
+      <class name="com.reports.crossBrowser.LoginFailed">
         <methods>
-          <include name="setUp"/>
+          <include name="beforeClass"/>
           <include name="loginFailed"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.reports.automation.LoginFailed -->
+      </class> <!-- com.reports.crossBrowser.LoginFailed -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test on Chrome(failed) -->
+  <test name="Test on Firefox(failed)">
+    <parameter name="BrowserType" value="Firefox"/>
+    <classes>
+      <class name="com.reports.crossBrowser.LoginFailed">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="loginFailed"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.reports.crossBrowser.LoginFailed -->
+    </classes>
+  </test> <!-- Test on Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
