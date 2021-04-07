@@ -12,17 +12,17 @@
 + instalar eclipse: https://tutobasico.com/instalar-eclipse-windows/
 
 ## Agregar el Plug-in de Test NG a Eclipse
-+Desde el Marketplace*
-+Ir a https://marketplace.eclipse.org/content/testng-eclipse
-+Clickear y arrastrar el boton de "Install" al Package Explorer de Eclipse
-+Click en "Install anyway"
-+Aceptar los terminos y condiciones
-+Aceptar
++ Desde el Marketplace*
++ Ir a https://marketplace.eclipse.org/content/testng-eclipse
++ Clickear y arrastrar el boton de "Install" al Package Explorer de Eclipse
++ Click en "Install anyway"
++ Aceptar los terminos y condiciones
++ Aceptar
 
 ## Comienzo
-+Clonar el repositorio en el workspace de eclipse
-+Abrir el archivo testng.xml (se encuentra en la raiz del proyecto)
-+Presionar Alt+Shift+X, G
++ Clonar el repositorio en el workspace de eclipse
++ Abrir el archivo testng.xml (se encuentra en la raiz del proyecto)
++ Presionar Alt+Shift+X, G
 
 ## Reportes
-+Para ver el reporte completo ir a la carpeta test-output y abrir el archivo "emailable-report.html"
++ Para ver el reporte completo ir a la carpeta test-output y abrir el archivo "emailable-report.html"
