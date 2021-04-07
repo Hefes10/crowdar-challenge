@@ -1,6 +1,7 @@
 # crowdar-challenge
 
-## Requerimientos del Sistema: 
+## Requerimientos del Sistema:
++ Windows 10
 + git client: https://git-scm.com/downloads
 + Eclipse IDE 2021‑03: https://www.eclipse.org/downloads/
 + java version "1.8.0_281" o superior
@@ -15,9 +16,11 @@
 + **Desde el Marketplace**
 + Ir a https://marketplace.eclipse.org/content/testng-eclipse
 + Clickear y arrastrar el boton de "Install" al Package Explorer de Eclipse
++ Click en "Confirm"
++ Click en "I accept the terms of the license agreement"
++ Click en "Finish"
 + Click en "Install anyway"
-+ Aceptar los terminos y condiciones
-+ Aceptar
++ Click en "Restart now"
 
 ## Comienzo
 + Clonar el repositorio en el workspace de eclipse
