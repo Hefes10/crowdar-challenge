@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test on Chrome">
+  <parameter name="BrowserType" value="Chrome"/>
     <classes>
-      <class name="com.reports.automation.LoginUserAndPassNone"/>
-      <class name="com.reports.automation.LoginFailed"/>
-      <class name="com.reports.automation.LoginExitoso"/>
-      <class name="com.reports.automation.LoginPassNone"/>
-      <class name="com.reports.automation.LoginUserNone"/>
-      <class name="com.reports.automation.LoginUserFail"/>
-      <class name="com.reports.automation.LoginPassFail"/>
+      <class name="com.reports.crossBrowser.LoginExitoso"/>
+      <class name="com.reports.crossBrowser.LoginUserFail"/>
+      <class name="com.reports.crossBrowser.LoginPassNone"/>
+      <class name="com.reports.crossBrowser.LoginPassFail"/>
+      <class name="com.reports.crossBrowser.LoginFailed"/>
+      <class name="com.reports.crossBrowser.LoginUserNone"/>
+      <class name="com.reports.crossBrowser.LoginUserAndPassNone"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test on Firefox">
+  <parameter name="BrowserType" value="Firefox"/>
+    <classes>
+      <class name="com.reports.crossBrowser.LoginExitoso"/>
+      <class name="com.reports.crossBrowser.LoginUserFail"/>
+      <class name="com.reports.crossBrowser.LoginPassNone"/>
+      <class name="com.reports.crossBrowser.LoginPassFail"/>
+      <class name="com.reports.crossBrowser.LoginFailed"/>
+      <class name="com.reports.crossBrowser.LoginUserNone"/>
+      <class name="com.reports.crossBrowser.LoginUserAndPassNone"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
