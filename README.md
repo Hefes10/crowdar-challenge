@@ -31,5 +31,6 @@
 ## Reportes
 + Para ver el reporte completo ir a la carpeta test-output y abrir el archivo "emailable-report.html"
 
-
+```
 ![Screenshot](screenshot.png)
+```
