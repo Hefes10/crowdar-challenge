@@ -25,6 +25,7 @@
 ## Comienzo
 + Clonar el repositorio en el workspace de eclipse
 `git clone https://github.com/Hefes10/crowdar-challenge.git`
++ Import projects -> Maven -> Existing Maven Projects -> Next -> Browse.. -> Seleccionar carpeta "crowdar-challenge" -> Click en Finish
 + Abrir el archivo testng.xml (se encuentra en la raiz del proyecto)
 + Presionar Alt+Shift+X, G
 
